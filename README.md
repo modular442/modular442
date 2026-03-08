@@ -83,7 +83,7 @@ it is already broken
 # Contribution Snake
 
 <p align="center">
-<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg">
+<img src="https://github.com/modular442/modular442/blob/output/github-snake-dark.svg">
 </p>
 
 ---
