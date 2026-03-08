@@ -1,22 +1,20 @@
 name: snake
 
 on:
-schedule:
-- cron: "0 */12 * * *"
+  schedule:
+    - cron: "0 */12 * * *"
 
 jobs:
-snake:
-runs-on: ubuntu-latest
-steps:
-- uses: Platane/snk@v3
-with:
-github_user_name: modular442
-outputs: |
-dist/github-contribution-grid-snake.svg
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
 
-```
-  - uses: crazy-max/ghaction-github-pages@v3
-    with:
-      target_branch: output
-      build_dir: dist
-```
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: modular442
+
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
